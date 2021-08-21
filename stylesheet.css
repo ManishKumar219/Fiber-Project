@@ -1,0 +1,419 @@
+:root {
+    --blue: #4d13d1;
+    --cream: #fbf8f3;
+    --gray-font: #4f4f4f;
+    --hover-color: #4c13d1de;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.first-section{
+    background-color: var(--cream);
+}
+
+.fiber{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* .fiber:hover{
+    font-size: 1.1em;
+    position: absolute;
+    margin-top: -0.1em;
+} */
+
+.sec-section{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec-nav{
+    display: flex;
+    /* width: 70%; */
+    justify-content: space-between;
+}
+
+#hamburger{
+    display: none;
+}
+
+.nav-list{
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 1em;
+}
+
+.nav-list li:hover{
+    border-bottom: 1px solid black;
+}
+.fiber li:hover{
+    border-bottom: none;
+}
+
+.nav-list a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#sign, .btn{
+    font-weight: 700;
+}
+
+#sign li:hover{
+    font-weight: 800;
+    border: none;
+}
+
+.btn{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn a{
+    color: white;
+}
+
+.btn:hover{
+    background-color: var(--hover-color);
+}
+
+.info-section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.info-div{
+    width: 50%;
+    color: var(--gray-font);
+}
+
+.info-div h1{
+    color: black;
+    font-size: 50px;
+    margin: 0;
+}
+
+#star-rate span{
+    color: black;
+    /* margin-left: 0.3em; */
+    margin: auto 0.3em;
+}
+
+.img-div{
+    width: 50%;
+}
+
+.img-div img{
+    width: 100%;
+}
+
+.link{
+    padding-left: 1.5em;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.link:hover{
+    color: var(--hover-color);
+}
+
+#check-text{
+    display: flex;
+}
+
+#check-text p{
+    padding: 0 1em;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item{
+    width: 30%;
+    padding-bottom: 4em;
+}
+
+.why-fiber-div{
+    padding: 4em 0;
+}
+
+.why-fiber-div h2{
+    font-size: 35px;
+    line-height: 1.4em;
+}
+
+.why-fiber-link{
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.head-text{
+    font-weight: 700;
+}
+
+.blue-div{
+    background-color: var(--blue);
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+.blue-info{
+    color: white;
+    padding: 1em;
+    width: 40%;
+}
+
+.blue-info p{
+    font-size: 1.1em;
+}
+
+.blue-img{
+    width: 60%;
+    margin-bottom: -4px;
+}
+
+.wit-btn{
+    background-color: white;
+    color: var(--blue);
+}
+
+.wit-btn:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bio-tile{
+    width: 30%;
+    border: 2px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 1em; /* *************************************CHECK */
+}
+
+.bio-head{
+    display: flex;
+}
+
+.bio-head img{
+    margin-right: 1em;
+}
+.bio-head h3{
+    margin-bottom: 0;
+    color: var(--blue);
+}
+.bio-head p{
+    margin-top: 0;
+}
+
+.bio-btn{
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    font-size: 1em;
+    color: var(--blue);
+    font-weight: 700;
+    padding: .5em;
+}
+
+.bio-btn:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+#bio-sction{
+    margin: 3em 0;
+}
+
+/* ****************FOOTER********************* */
+footer{
+    background-color: var(--cream);
+    color: black;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+    padding: 1% 10%;
+}
+
+footer p{
+    font-weight: 400;
+    color: var(--gray-font);
+}
+
+.footer-info{
+    width: 35%;
+}
+
+.navigation{
+    display: flex;
+}
+
+.footer-head{
+    color: black;
+    font-weight: 700;
+}
+
+footer a{
+    color: #9e9e9e;
+}
+
+footer a:hover{
+    color: black;
+}
+
+.footer-nav{
+    list-style: none;
+    margin: .5em;
+}
+
+.footer-nav li{
+    padding: .2em;
+}
+
+.footer-nav a{
+    text-decoration: none;
+}
+
+@media (min-width: 800px){
+    #sec-nav{
+        width: 70%;
+    }
+}
+
+/* ************************
+    MEDIA TAB
+*************************** */
+
+
+
+@media (max-width: 800px){
+    .sec1{
+        flex-direction: column-reverse;
+    }
+    .info-div{
+        width: 100%;
+    }
+    .blue-div{
+        flex-direction: column;
+    }
+    .blue-img{
+        width: 100%;
+        margin-bottom: -4px;
+    }
+
+
+
+    .footer-info{
+        width: 45%;
+        padding-right: 4em;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 3% 5%;
+    }
+    .footer-nav{
+        padding: 0;
+        width: 22%;
+        /* border: 1px solid white; */
+        margin: 0;
+    }
+
+}
+
+
+/* ************************
+    MEDIA PHONE
+*************************** */
+
+@media (max-width: 500px){
+    #sec-nav{
+        /* display: none; */
+        flex-direction: column;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        right: 0;
+        padding: 1em;
+        
+    }
+
+    .nav-list li:hover{
+        border-bottom: none;
+    }
+
+    .hamb-list{
+        margin: 0;
+        flex-direction: column;
+        display: none;
+    }
+
+    /* .nav-list li:hover{
+        border: none;
+        box-shadow: -2px 2px var(--blue);
+    } */
+    
+    #hamburger{
+        width: 35px;
+        margin-left: auto;
+        padding: 1em;
+        padding-bottom: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+    .flex-div{
+        flex-direction: column;
+    }
+
+    .flex-item{
+        width: 100%;
+    }
+
+    .bio-tile{
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    @keyframes example {
+        0%   {opacity: .4;}
+        25%  {opacity: .6;}
+        50%  {opacity: .8;}
+        100% {opacity: 1;}
+    }
+    .hamb-list{
+        animation-name: example;
+        animation-duration: 1s;
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+    .footer-info{
+        width: 100%;
+    }
+    .footer-nav{
+        width: 100%;
+    }
+}

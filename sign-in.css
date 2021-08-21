@@ -1,0 +1,91 @@
+:root {
+    --blue: #4d13d1;
+    --cream: #fbf8f3;
+    --gray-font: #4f4f4f;
+    --hover-color: #4c13d1de;
+    --border-color: #e2e2e2;
+}
+
+body{
+    font-size: 1.1rem;
+}
+
+#main-section{
+    max-width: 1200px;
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#info-div{
+    width: 35%;
+}
+
+#info-div h1{
+    margin: 1.5em 0;
+    font-size: 196%;
+}
+
+#info-div label{
+    font-weight: 500;
+}
+
+.input{
+    font-size: 1em;
+    padding: .4em;
+    margin-top: .3em;
+    border: 2px solid var(--border-color);
+    /* color: var(--border-color); */
+    width: 100%;
+}
+
+#img-div{
+    width: 50%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+}
+
+#img-div img{
+    width: 70%;
+    margin-top: 20%;
+}
+
+.btn{
+    width: 100%;
+    margin: 1em 0;
+    margin-bottom: 0;
+}
+
+
+
+#sign-in-link{
+    text-align: center;
+    font-size: .8em;
+}
+
+@media (max-width:800px){
+    #main-section{
+        flex-direction: column;
+    }
+    #info-div{
+        width: 60%;
+        margin: auto;
+    }
+    #img-div{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px){
+    #img-div{
+        display: none;
+    }
+    #info-div{
+        width: 90%;
+        margin: auto;
+    }
+}
